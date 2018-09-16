@@ -16,12 +16,16 @@ import { Switch, Route } from 'react-router-dom';
 
 import HomePage from 'containers/HomePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
+import SimpleFactory from 'containers/SimpleFactory/Loadable';
+import FactoryMethod from 'containers/FactoryMethod/Loadable';
 
 export default function App() {
   return (
     <div>
       <Switch>
         <Route exact path="/" component={HomePage} />
+        <Route exact path="/simple-factory" component={SimpleFactory} />
+        <Route exact path="/factory-method" component={FactoryMethod} />
         <Route component={NotFoundPage} />
       </Switch>
     </div>

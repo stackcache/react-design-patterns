@@ -1,16 +1,16 @@
 {
-  "name": "react-boilerplate",
+  "name": "react-design-patterns",
   "version": "3.6.0",
   "description": "A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices",
   "repository": {
     "type": "git",
-    "url": "git://github.com/react-boilerplate/react-boilerplate.git"
+    "url": "git@github.com:stackcache/react-design-patterns.git"
   },
   "engines": {
     "npm": ">=5",
     "node": ">=8"
   },
-  "author": "Max Stoiber",
+  "author": "Stack Cache",
   "license": "MIT",
   "scripts": {
     "analyze:clean": "rimraf stats.json",
