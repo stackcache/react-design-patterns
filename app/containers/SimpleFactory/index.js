@@ -44,7 +44,7 @@ export class SimpleFactory extends React.PureComponent {
     return (
       <div>
         <h1>Simple Factory</h1>
-        {being1.canDoAnything && <p>Man can do anything</p>}
+        {!being1.canDoAnything && <p>Man cannot do anything</p>}
         {being2.canDoAnything && <p>God can do anything</p>}
       </div>
     );
@@ -55,7 +55,7 @@ const mapStateToProps = createStructuredSelector({
   simplefactory: makeSelectSimpleFactory(),
 });
 
-function mapDispatchToProps(dispatch) {
+export function mapDispatchToProps(dispatch) {
   return {
     dispatch,
   };

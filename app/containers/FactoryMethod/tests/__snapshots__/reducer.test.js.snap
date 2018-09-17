@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`factoryMethodReducer returns the initial state 1`] = `Immutable.Map {}`;
+
+exports[`factoryMethodReducer returns the state when DEFAULT_ACTION is passed 1`] = `Object {}`;

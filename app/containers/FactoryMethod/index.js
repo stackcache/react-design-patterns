@@ -23,7 +23,7 @@ import injectReducer from 'utils/injectReducer';
 import makeSelectFactoryMethod from './selectors';
 import reducer from './reducer';
 
-class Interviewer {
+export class Interviewer {
   constructor() {
     this.askQuestions = () => {};
   }
@@ -43,7 +43,7 @@ class Marketing extends Interviewer {
   }
 }
 
-class HiringManager {
+export class HiringManager {
   constructor() {
     // Factory method
     this.makeInterviewer = () => new Interviewer();
@@ -92,7 +92,7 @@ const mapStateToProps = createStructuredSelector({
   factorymethod: makeSelectFactoryMethod(),
 });
 
-function mapDispatchToProps(dispatch) {
+export function mapDispatchToProps(dispatch) {
   return {
     dispatch,
   };
