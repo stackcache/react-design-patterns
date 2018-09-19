@@ -8,7 +8,7 @@
 <br />
 
 <div align="center">
-  <sub>Created by <a href="https://github.com/stackcache">Stack Cache</a></sub>
+  <sub>Created by <a href="https://github.com/stackcache">Stack Cache.</a></sub>
 </div>
 
 ## License
