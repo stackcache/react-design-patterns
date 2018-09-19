@@ -18,6 +18,7 @@ import HomePage from 'containers/HomePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import SimpleFactory from 'containers/SimpleFactory/Loadable';
 import FactoryMethod from 'containers/FactoryMethod/Loadable';
+import AbstractFactory from 'containers/AbstractFactory/Loadable';
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
         <Route exact path="/" component={HomePage} />
         <Route exact path="/simple-factory" component={SimpleFactory} />
         <Route exact path="/factory-method" component={FactoryMethod} />
+        <Route exact path="/abstract-factory" component={AbstractFactory} />
         <Route component={NotFoundPage} />
       </Switch>
     </div>

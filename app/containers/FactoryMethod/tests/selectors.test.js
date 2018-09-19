@@ -11,7 +11,7 @@ describe('selectFactoryMethodDomain', () => {
 
   it('should be able to create a factory', () => {
     const state = fromJS({
-      simpleFactory: initialState,
+      factoryMethod: initialState,
     });
 
     const creator = makeSelectFactoryMethod();
