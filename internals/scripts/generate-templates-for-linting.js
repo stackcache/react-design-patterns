@@ -91,10 +91,10 @@ containerGen
   .runActions({
     name: 'RbGeneratedContainerComponent',
     type: 'React.Component',
-    wantHeaders: true,
+    wantHeaders: false,
     wantActionsAndReducer: true,
-    wantSagas: true,
-    wantMessages: true,
+    wantSagas: false,
+    wantMessages: false,
     wantLoadable: true,
   })
   .then(checkForErrors)
