@@ -4,10 +4,11 @@ import { shallow } from 'enzyme';
 import {
   AbstractFactory,
   DoorFactory,
-  Door,
   DoorFittingExpert,
   mapDispatchToProps,
 } from '../index';
+
+import Door from '../../../components/Door';
 
 describe('<AbstractFactory />', () => {
   it('should render the component correctly', () => {
