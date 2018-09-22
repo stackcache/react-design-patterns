@@ -30,12 +30,7 @@ import { compose } from 'redux';
 import injectReducer from 'utils/injectReducer';
 import makeSelectAbstractFactory from './selectors';
 import reducer from './reducer';
-
-export class Door {
-  constructor() {
-    this.getDescription = () => {};
-  }
-}
+import Door from '../../components/Door';
 
 class WoodenDoor extends Door {
   constructor() {
