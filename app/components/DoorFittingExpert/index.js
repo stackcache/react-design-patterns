@@ -1,19 +1,19 @@
 /**
  *
- * Door
+ * DoorFittingExpert
  *
  */
 
 import React from 'react';
 
 /* eslint-disable react/prefer-stateless-function */
-class Door extends React.PureComponent {
+class DoorFittingExpert extends React.PureComponent {
   constructor() {
     super();
     this.getDescription = () => {};
   }
 }
 
-Door.propTypes = {};
+DoorFittingExpert.propTypes = {};
 
-export default Door;
+export default DoorFittingExpert;
