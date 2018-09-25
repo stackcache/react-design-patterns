@@ -30,43 +30,10 @@ import { compose } from 'redux';
 import injectReducer from 'utils/injectReducer';
 import makeSelectAbstractFactory from './selectors';
 import reducer from './reducer';
-import Door from '../../components/Door';
-
-class WoodenDoor extends Door {
-  constructor() {
-    super();
-    this.getDescription = () => 'I am a wooden door';
-  }
-}
-
-class IronDoor extends Door {
-  constructor() {
-    super();
-    this.getDescription = () => 'I am an iron door';
-  }
-}
-
-// fitting experts for each door type
-
-export class DoorFittingExpert {
-  constructor() {
-    this.getDescription = () => {};
-  }
-}
-
-class Welder extends DoorFittingExpert {
-  constructor() {
-    super();
-    this.getDescription = () => 'I can only fit iron doors';
-  }
-}
-
-class Carpenter extends DoorFittingExpert {
-  constructor() {
-    super();
-    this.getDescription = () => 'I can only fit wooden doors';
-  }
-}
+import WoodenDoor from '../../components/WoodenDoor';
+import IronDoor from '../../components/IronDoor';
+import Welder from '../../components/Welder';
+import Carpenter from '../../components/Carpenter';
 
 /**
  * Now we have our abstract factory that would
