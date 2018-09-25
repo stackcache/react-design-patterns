@@ -1,14 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import {
-  AbstractFactory,
-  DoorFactory,
-  DoorFittingExpert,
-  mapDispatchToProps,
-} from '../index';
+import { AbstractFactory, DoorFactory, mapDispatchToProps } from '../index';
 
 import Door from '../../../components/Door';
+import DoorFittingExpert from '../../../components/DoorFittingExpert';
 
 describe('<AbstractFactory />', () => {
   it('should render the component correctly', () => {
