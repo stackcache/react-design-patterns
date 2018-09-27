@@ -23,12 +23,7 @@
 
 import React from 'react';
 import { connect } from 'react-redux';
-import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
-
-import injectReducer from 'utils/injectReducer';
-import makeSelectBuilder from './selectors';
-import reducer from './reducer';
 
 export class Burger {
   constructor(builder) {
@@ -104,10 +99,6 @@ export class Builder extends React.PureComponent {
   }
 }
 
-const mapStateToProps = createStructuredSelector({
-  builder: makeSelectBuilder(),
-});
-
 export function mapDispatchToProps(dispatch) {
   return {
     dispatch,
@@ -115,13 +106,8 @@ export function mapDispatchToProps(dispatch) {
 }
 
 const withConnect = connect(
-  mapStateToProps,
+  null,
   mapDispatchToProps,
 );
 
-const withReducer = injectReducer({ key: 'builder', reducer });
-
-export default compose(
-  withReducer,
-  withConnect,
-)(Builder);
+export default compose(withConnect)(Builder);

@@ -17,12 +17,7 @@
 
 import React from 'react';
 import { connect } from 'react-redux';
-import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
-
-import injectReducer from 'utils/injectReducer';
-import makeSelectSimpleFactory from './selectors';
-import reducer from './reducer';
 
 /* This is a Simple Being Factory */
 class Being {
@@ -51,10 +46,6 @@ export class SimpleFactory extends React.PureComponent {
   }
 }
 
-const mapStateToProps = createStructuredSelector({
-  simplefactory: makeSelectSimpleFactory(),
-});
-
 export function mapDispatchToProps(dispatch) {
   return {
     dispatch,
@@ -62,13 +53,8 @@ export function mapDispatchToProps(dispatch) {
 }
 
 const withConnect = connect(
-  mapStateToProps,
+  null,
   mapDispatchToProps,
 );
 
-const withReducer = injectReducer({ key: 'simpleFactory', reducer });
-
-export default compose(
-  withReducer,
-  withConnect,
-)(SimpleFactory);
+export default compose(withConnect)(SimpleFactory);

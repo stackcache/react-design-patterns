@@ -1,30 +1,16 @@
 import React from 'react';
-import { mount } from 'enzyme';
-import { createStore, compose, applyMiddleware } from 'redux';
-import { Provider } from 'react-redux';
-import createSagaMiddleware from 'redux-saga';
-import factoryMethodReducer from '../reducer';
+import { shallow } from 'enzyme';
 
 import {
   FactoryMethod,
-  mapDispatchToProps,
   HiringManager,
   Interviewer,
+  mapDispatchToProps,
 } from '../index';
 
 describe('<FactoryMethod />', () => {
   it('should render the page message', () => {
-    const sagaMiddleware = createSagaMiddleware();
-    const store = createStore(
-      factoryMethodReducer,
-      compose(applyMiddleware(sagaMiddleware)),
-    );
-
-    const renderedComponent = mount(
-      <Provider store={store}>
-        <FactoryMethod />
-      </Provider>,
-    );
+    const renderedComponent = shallow(<FactoryMethod />);
 
     expect(
       renderedComponent.contains(
