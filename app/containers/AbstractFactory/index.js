@@ -24,12 +24,8 @@
 
 import React from 'react';
 import { connect } from 'react-redux';
-import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
 
-import injectReducer from 'utils/injectReducer';
-import makeSelectAbstractFactory from './selectors';
-import reducer from './reducer';
 import WoodenDoor from '../../components/WoodenDoor';
 import IronDoor from '../../components/IronDoor';
 import Welder from '../../components/Welder';
@@ -92,10 +88,6 @@ export class AbstractFactory extends React.PureComponent {
   }
 }
 
-const mapStateToProps = createStructuredSelector({
-  abstractfactory: makeSelectAbstractFactory(),
-});
-
 export function mapDispatchToProps(dispatch) {
   return {
     dispatch,
@@ -103,13 +95,8 @@ export function mapDispatchToProps(dispatch) {
 }
 
 const withConnect = connect(
-  mapStateToProps,
+  null,
   mapDispatchToProps,
 );
 
-const withReducer = injectReducer({ key: 'abstractFactory', reducer });
-
-export default compose(
-  withReducer,
-  withConnect,
-)(AbstractFactory);
+export default compose(withConnect)(AbstractFactory);

@@ -3,7 +3,7 @@
 <br />
 
 <div align="center"><strong>React Design Patterns</strong></div>
-<div align="center">An implementation of Gang of Four design patterns in ES6 & React. Project created with the <a href="https://github.com/react-boilerplate/react-boilerplate">react-boilerplate</a> project.</div>
+<div align="center">An implementation of Gang of Four design patterns in ES6 & React. React Design Patters was created with the <a href="https://github.com/react-boilerplate/react-boilerplate">react-boilerplate</a> project.</div>
 
 <br />
 

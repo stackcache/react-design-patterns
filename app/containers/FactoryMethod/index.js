@@ -16,12 +16,7 @@
 
 import React from 'react';
 import { connect } from 'react-redux';
-import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
-
-import injectReducer from 'utils/injectReducer';
-import makeSelectFactoryMethod from './selectors';
-import reducer from './reducer';
 
 export class Interviewer {
   constructor() {
@@ -88,10 +83,6 @@ export class FactoryMethod extends React.PureComponent {
   }
 }
 
-const mapStateToProps = createStructuredSelector({
-  factorymethod: makeSelectFactoryMethod(),
-});
-
 export function mapDispatchToProps(dispatch) {
   return {
     dispatch,
@@ -99,13 +90,8 @@ export function mapDispatchToProps(dispatch) {
 }
 
 const withConnect = connect(
-  mapStateToProps,
+  null,
   mapDispatchToProps,
 );
 
-const withReducer = injectReducer({ key: 'factoryMethod', reducer });
-
-export default compose(
-  withReducer,
-  withConnect,
-)(FactoryMethod);
+export default compose(withConnect)(FactoryMethod);

@@ -1,25 +1,11 @@
 import React from 'react';
-import { mount } from 'enzyme';
-import { createStore, compose, applyMiddleware } from 'redux';
-import { Provider } from 'react-redux';
-import createSagaMiddleware from 'redux-saga';
-import simpleFactoryReducer from '../reducer';
+import { shallow } from 'enzyme';
 
 import { SimpleFactory, mapDispatchToProps } from '../index';
 
 describe('<SimpleFactory />', () => {
   it('should render the page message', () => {
-    const sagaMiddleware = createSagaMiddleware();
-    const store = createStore(
-      simpleFactoryReducer,
-      compose(applyMiddleware(sagaMiddleware)),
-    );
-
-    const renderedComponent = mount(
-      <Provider store={store}>
-        <SimpleFactory />
-      </Provider>,
-    );
+    const renderedComponent = shallow(<SimpleFactory />);
 
     expect(renderedComponent.contains(<p>God can do anything</p>)).toEqual(
       true,
