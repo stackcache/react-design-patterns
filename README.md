@@ -7,6 +7,10 @@
 
 <br />
 
+# Structure
+
+The patterns are located in the containers directory. The components directory is composed of classes utilized by the design pattern containers.
+
 <div align="center">
   <sub>Created by <a href="https://github.com/stackcache">Stack Cache.</a></sub>
 </div>
