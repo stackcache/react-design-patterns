@@ -21,6 +21,8 @@ import FactoryMethod from 'containers/FactoryMethod/Loadable';
 import AbstractFactory from 'containers/AbstractFactory/Loadable';
 import Builder from 'containers/Builder/Loadable';
 import Prototype from 'containers/Prototype/Loadable';
+import Singleton from 'components/Singleton/Loadable';
+import Adapter from 'containers/Adapter/Loadable';
 
 export default function App() {
   return (
@@ -32,6 +34,8 @@ export default function App() {
         <Route exact path="/abstract-factory" component={AbstractFactory} />
         <Route exact path="/builder" component={Builder} />
         <Route exact path="/prototype" component={Prototype} />
+        <Route exact path="/singleton" component={Singleton} />
+        <Route exact path="/adapter" component={Adapter} />
         <Route component={NotFoundPage} />
       </Switch>
     </div>

@@ -75,7 +75,7 @@ export class FactoryMethod extends React.PureComponent {
 
     return (
       <div>
-        <h1>Factory Method (Creational Pattern)</h1>
+        <h1>Factory Method</h1>
         <p>Dev manager will be {devQs}</p>
         <p>Marketing manager will be {markQs}</p>
       </div>
