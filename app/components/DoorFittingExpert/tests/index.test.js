@@ -1,7 +1,7 @@
 import DoorFittingExpert from '../index';
 
 describe('<DoorFittingExpert />', () => {
-  it('should render', () => {
+  it('should yield a function', () => {
     const dfe = new DoorFittingExpert();
     expect(dfe.getDescription).toBeInstanceOf(Function);
   });
