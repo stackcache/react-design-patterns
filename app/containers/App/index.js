@@ -24,6 +24,7 @@ import Prototype from 'containers/Prototype/Loadable';
 import Singleton from 'components/Singleton/Loadable';
 import Adapter from 'containers/Adapter/Loadable';
 import Bridge from 'containers/Bridge/Loadable';
+import Composite from 'containers/Composite/Loadable';
 
 export default function App() {
   return (
@@ -38,6 +39,7 @@ export default function App() {
         <Route exact path="/singleton" component={Singleton} />
         <Route exact path="/adapter" component={Adapter} />
         <Route exact path="/bridge" component={Bridge} />
+        <Route exact path="/composite" component={Composite} />
         <Route component={NotFoundPage} />
       </Switch>
     </div>
