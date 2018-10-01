@@ -55,6 +55,12 @@ export default class HomePage extends React.PureComponent {
           <li>
             <Link to="/composite">Composite</Link>
           </li>
+          <li>
+            <Link to="/decorator">Decorator</Link>
+          </li>
+          <li>
+            <Link to="/facade">Facade</Link>
+          </li>
         </ul>
         <h2>Behavioral Patterns</h2>
       </div>
