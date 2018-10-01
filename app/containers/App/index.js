@@ -28,6 +28,7 @@ import Composite from 'containers/Composite/Loadable';
 import Decorator from 'containers/Decorator/Loadable';
 import Facade from 'containers/Facade/Loadable';
 import Flyweight from 'containers/Flyweight/Loadable';
+import Proxy from 'containers/Proxy/Loadable';
 
 export default function App() {
   return (
@@ -46,6 +47,7 @@ export default function App() {
         <Route exact path="/decorator" component={Decorator} />
         <Route exact path="/facade" component={Facade} />
         <Route exact path="/flyweight" component={Flyweight} />
+        <Route exact path="/proxy" component={Proxy} />
         <Route component={NotFoundPage} />
       </Switch>
     </div>

@@ -26,10 +26,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 
-import WoodenDoor from '../../components/WoodenDoor';
-import IronDoor from '../../components/IronDoor';
 import Welder from '../../components/Welder';
 import Carpenter from '../../components/Carpenter';
+import { IronDoor, WoodenDoor } from '../../components/Door';
 
 /**
  * Now we have our abstract factory that would

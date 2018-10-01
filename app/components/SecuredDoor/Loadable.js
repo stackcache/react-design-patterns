@@ -1,6 +1,6 @@
 /**
  *
- * Asynchronously loads the component for AfricanLion
+ * Asynchronously loads the component for SecuredDoor
  *
  */
 
