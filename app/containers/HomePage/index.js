@@ -61,6 +61,9 @@ export default class HomePage extends React.PureComponent {
           <li>
             <Link to="/facade">Facade</Link>
           </li>
+          <li>
+            <Link to="/flyweight">Flyweight</Link>
+          </li>
         </ul>
         <h2>Behavioral Patterns</h2>
       </div>
