@@ -23,6 +23,10 @@ import Builder from 'containers/Builder/Loadable';
 import Prototype from 'containers/Prototype/Loadable';
 import Singleton from 'components/Singleton/Loadable';
 import Adapter from 'containers/Adapter/Loadable';
+import Bridge from 'containers/Bridge/Loadable';
+import Composite from 'containers/Composite/Loadable';
+import Decorator from 'containers/Decorator/Loadable';
+import Facade from 'containers/Facade/Loadable';
 
 export default function App() {
   return (
@@ -36,6 +40,10 @@ export default function App() {
         <Route exact path="/prototype" component={Prototype} />
         <Route exact path="/singleton" component={Singleton} />
         <Route exact path="/adapter" component={Adapter} />
+        <Route exact path="/bridge" component={Bridge} />
+        <Route exact path="/composite" component={Composite} />
+        <Route exact path="/decorator" component={Decorator} />
+        <Route exact path="/facade" component={Facade} />
         <Route component={NotFoundPage} />
       </Switch>
     </div>
