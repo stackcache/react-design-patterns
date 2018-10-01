@@ -1,6 +1,6 @@
 /**
  *
- * Asynchronously loads the component for AsianLion
+ * Asynchronously loads the component for Proxy
  *
  */
 

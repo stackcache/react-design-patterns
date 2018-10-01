@@ -13,6 +13,18 @@ class Lion extends React.PureComponent {
     this.roar = () => {};
   }
 }
+export class AsianLion extends Lion {
+  constructor() {
+    super();
+    this.roar = () => 'asian lion roar!';
+  }
+}
+export class AfricanLion extends Lion {
+  constructor() {
+    super();
+    this.roar = () => 'african lion roar!';
+  }
+}
 
 Lion.propTypes = {};
 

@@ -1,5 +1,5 @@
 import Hunter from '../index';
-import AfricanLion from '../../AfricanLion';
+import { AfricanLion } from '../../Lion';
 
 describe('<Hunter />', () => {
   it('Expect hunter to hunt lions', () => {
