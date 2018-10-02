@@ -52,7 +52,9 @@ export class ChainOfResponsibility extends React.PureComponent {
     return (
       <div>
         <h1>Chain of Responsibility</h1>
-        <p>{getMessages().map(msg => <li>{msg}</li>)}</p>
+        <p>
+          {getMessages().map((msg, i) => <li key={i.toString()}>{msg}</li>)}
+        </p>
       </div>
     );
   }
