@@ -29,6 +29,7 @@ import Decorator from 'containers/Decorator/Loadable';
 import Facade from 'containers/Facade/Loadable';
 import Flyweight from 'containers/Flyweight/Loadable';
 import Proxy from 'containers/Proxy/Loadable';
+import ChainOfResponsibility from 'containers/ChainOfResponsibility/Loadable';
 
 export default function App() {
   return (
@@ -48,6 +49,11 @@ export default function App() {
         <Route exact path="/facade" component={Facade} />
         <Route exact path="/flyweight" component={Flyweight} />
         <Route exact path="/proxy" component={Proxy} />
+        <Route
+          exact
+          path="/chain-of-responsibility"
+          component={ChainOfResponsibility}
+        />
         <Route component={NotFoundPage} />
       </Switch>
     </div>
