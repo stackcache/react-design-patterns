@@ -1,6 +1,3 @@
-// import React from 'react';
-// import { shallow } from 'enzyme';
-
 import Radio, { RadioStation } from '../index';
 
 describe('<Radio />', () => {
