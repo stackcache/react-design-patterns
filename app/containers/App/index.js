@@ -30,6 +30,7 @@ import Facade from 'containers/Facade/Loadable';
 import Flyweight from 'containers/Flyweight/Loadable';
 import Proxy from 'containers/Proxy/Loadable';
 import ChainOfResponsibility from 'containers/ChainOfResponsibility/Loadable';
+import Command from 'containers/Command/Loadable';
 
 export default function App() {
   return (
@@ -54,6 +55,7 @@ export default function App() {
           path="/chain-of-responsibility"
           component={ChainOfResponsibility}
         />
+        <Route exact path="/command" component={Command} />
         <Route component={NotFoundPage} />
       </Switch>
     </div>
