@@ -31,6 +31,7 @@ import Flyweight from 'containers/Flyweight/Loadable';
 import Proxy from 'containers/Proxy/Loadable';
 import ChainOfResponsibility from 'containers/ChainOfResponsibility/Loadable';
 import Command from 'containers/Command/Loadable';
+import Iterator from 'containers/Iterator/Loadable';
 
 export default function App() {
   return (
@@ -56,6 +57,7 @@ export default function App() {
           component={ChainOfResponsibility}
         />
         <Route exact path="/command" component={Command} />
+        <Route exact path="/iterator" component={Iterator} />
         <Route component={NotFoundPage} />
       </Switch>
     </div>
