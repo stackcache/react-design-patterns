@@ -72,6 +72,14 @@ export default class HomePage extends React.PureComponent {
           </li>
         </ul>
         <h2>Behavioral Patterns</h2>
+        <ul>
+          <li>
+            <Link to="/command">Command</Link>
+          </li>
+          <li>
+            <Link to="/iterator">Iterator</Link>
+          </li>
+        </ul>
       </div>
     );
   }
