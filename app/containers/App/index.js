@@ -29,6 +29,12 @@ import Decorator from 'containers/Decorator/Loadable';
 import Facade from 'containers/Facade/Loadable';
 import Flyweight from 'containers/Flyweight/Loadable';
 import Proxy from 'containers/Proxy/Loadable';
+import ChainOfResponsibility from 'containers/ChainOfResponsibility/Loadable';
+import Command from 'containers/Command/Loadable';
+import Iterator from 'containers/Iterator/Loadable';
+import Mediator from 'containers/Mediator/Loadable';
+import Memento from 'containers/Memento/Loadable';
+import Observer from 'containers/Observer/Loadable';
 
 export default function App() {
   return (
@@ -48,6 +54,16 @@ export default function App() {
         <Route exact path="/facade" component={Facade} />
         <Route exact path="/flyweight" component={Flyweight} />
         <Route exact path="/proxy" component={Proxy} />
+        <Route
+          exact
+          path="/chain-of-responsibility"
+          component={ChainOfResponsibility}
+        />
+        <Route exact path="/command" component={Command} />
+        <Route exact path="/iterator" component={Iterator} />
+        <Route exact path="/mediator" component={Mediator} />
+        <Route exact path="/memento" component={Memento} />
+        <Route exact path="/observer" component={Observer} />
         <Route component={NotFoundPage} />
       </Switch>
     </div>

@@ -67,8 +67,28 @@ export default class HomePage extends React.PureComponent {
           <li>
             <Link to="/proxy">Proxy</Link>
           </li>
+          <li>
+            <Link to="/chain-of-responsibility">Chain of Responsibility</Link>
+          </li>
         </ul>
         <h2>Behavioral Patterns</h2>
+        <ul>
+          <li>
+            <Link to="/command">Command</Link>
+          </li>
+          <li>
+            <Link to="/iterator">Iterator</Link>
+          </li>
+          <li>
+            <Link to="/mediator">Mediator</Link>
+          </li>
+          <li>
+            <Link to="/memento">Memento</Link>
+          </li>
+          <li>
+            <Link to="/observer">Observer</Link>
+          </li>
+        </ul>
       </div>
     );
   }
