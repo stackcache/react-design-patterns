@@ -82,6 +82,9 @@ export default class HomePage extends React.PureComponent {
           <li>
             <Link to="/mediator">Mediator</Link>
           </li>
+          <li>
+            <Link to="/memento">Memento</Link>
+          </li>
         </ul>
       </div>
     );
