@@ -94,6 +94,9 @@ export default class HomePage extends React.PureComponent {
           <li>
             <Link to="/strategy">Strategy</Link>
           </li>
+          <li>
+            <Link to="/state">State</Link>
+          </li>
         </ul>
       </div>
     );
