@@ -35,6 +35,7 @@ import Iterator from 'containers/Iterator/Loadable';
 import Mediator from 'containers/Mediator/Loadable';
 import Memento from 'containers/Memento/Loadable';
 import Observer from 'containers/Observer/Loadable';
+import Visitor from 'containers/Visitor/Loadable';
 
 export default function App() {
   return (
@@ -64,6 +65,7 @@ export default function App() {
         <Route exact path="/mediator" component={Mediator} />
         <Route exact path="/memento" component={Memento} />
         <Route exact path="/observer" component={Observer} />
+        <Route exact path="/visitor" component={Visitor} />
         <Route component={NotFoundPage} />
       </Switch>
     </div>
