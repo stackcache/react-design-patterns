@@ -38,6 +38,7 @@ import Observer from 'containers/Observer/Loadable';
 import Visitor from 'containers/Visitor/Loadable';
 import Strategy from 'containers/Strategy/Loadable';
 import State from 'containers/State/Loadable';
+import TemplateMethod from 'containers/TemplateMethod/Loadable';
 
 export default function App() {
   return (
@@ -70,6 +71,7 @@ export default function App() {
         <Route exact path="/visitor" component={Visitor} />
         <Route exact path="/strategy" component={Strategy} />
         <Route exact path="/state" component={State} />
+        <Route exact path="/template-method" component={TemplateMethod} />
         <Route component={NotFoundPage} />
       </Switch>
     </div>

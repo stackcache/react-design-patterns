@@ -97,6 +97,9 @@ export default class HomePage extends React.PureComponent {
           <li>
             <Link to="/state">State</Link>
           </li>
+          <li>
+            <Link to="/template-method">Template Method</Link>
+          </li>
         </ul>
       </div>
     );
