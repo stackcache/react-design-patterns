@@ -9,20 +9,28 @@ import DoorFittingExpert from '../../../components/DoorFittingExpert';
 describe('<AbstractFactory />', () => {
   it('should render the component correctly', () => {
     const renderedComponent = shallow(<AbstractFactory />);
-    expect(renderedComponent.contains(<p>Door: I am a wooden door</p>)).toEqual(
-      true,
-    );
-
     expect(
-      renderedComponent.contains(<p>Expert: I can only fit wooden doors</p>),
+      renderedComponent.contains(
+        <p className="subtitle">Door: I am a wooden door</p>,
+      ),
     ).toEqual(true);
 
-    expect(renderedComponent.contains(<p>Door: I am an iron door</p>)).toEqual(
-      true,
-    );
+    expect(
+      renderedComponent.contains(
+        <p className="subtitle">Expert: I can only fit wooden doors</p>,
+      ),
+    ).toEqual(true);
 
     expect(
-      renderedComponent.contains(<p>Expert: I can only fit iron doors</p>),
+      renderedComponent.contains(
+        <p className="subtitle">Door: I am an iron door</p>,
+      ),
+    ).toEqual(true);
+
+    expect(
+      renderedComponent.contains(
+        <p className="subtitle">Expert: I can only fit iron doors</p>,
+      ),
     ).toEqual(true);
   });
 

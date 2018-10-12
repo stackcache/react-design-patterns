@@ -8,7 +8,7 @@ describe('<Decorator />', () => {
     const renderedComponent = shallow(<Decorator />);
     expect(
       renderedComponent.contains(
-        <p>Simple coffee, milk, whip, vanilla: $20</p>,
+        <p className="subtitle">Simple coffee, milk, whip, vanilla: $20</p>,
       ),
     ).toEqual(true);
   });

@@ -20,6 +20,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import Computer, { ComputerFacade } from '../../components/Computer';
+import '../HomePage/HomePage.css';
 
 /* eslint-disable react/prefer-stateless-function */
 export class Facade extends React.PureComponent {
@@ -28,9 +29,10 @@ export class Facade extends React.PureComponent {
 
     return (
       <div>
-        <h1>Facade</h1>
-        <p>Turn on: {computer.turnOn()}</p>
-        <p>Turn off: {computer.turnOff()}</p>
+        <div className="header">Facade</div>
+        <div className="instructions">Seems simple enough</div>
+        <p className="subtitle">Turn on: {computer.turnOn()}</p>
+        <p className="subtitle">Turn off: {computer.turnOff()}</p>
       </div>
     );
   }

@@ -21,6 +21,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { AndroidBuilder, IosBuilder } from '../../components/Template';
+import '../HomePage/HomePage.css';
 
 /* eslint-disable react/prefer-stateless-function */
 export class TemplateMethod extends React.PureComponent {
@@ -29,11 +30,20 @@ export class TemplateMethod extends React.PureComponent {
     const ios = new IosBuilder();
     return (
       <div>
-        <h1>Template Method</h1>
-        <h2>Android</h2>
-        {android.build().map((msg, i) => <p key={i.toString()}>{msg}</p>)}
-        <h2>IOS</h2>
-        {ios.build().map((msg, i) => <p key={i.toString()}>{msg}</p>)}
+        <div className="header">Template Method</div>
+        <div className="instructions">Follow the plan</div>
+        <div className="subtitle head">Android</div>
+        {android.build().map((msg, i) => (
+          <p className="subtitle" key={i.toString()}>
+            {msg}
+          </p>
+        ))}
+        <div className="subtitle head">IOS</div>
+        {ios.build().map((msg, i) => (
+          <p className="subtitle" key={i.toString()}>
+            {msg}
+          </p>
+        ))}
       </div>
     );
   }

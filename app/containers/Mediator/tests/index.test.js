@@ -6,7 +6,9 @@ import { Mediator, mapDispatchToProps } from '../index';
 describe('<Mediator />', () => {
   it('should render', () => {
     const renderedComponent = shallow(<Mediator />);
-    expect(renderedComponent.contains(<p>[John]: Hi there!</p>)).toEqual(true);
+    expect(
+      renderedComponent.contains(<p className="subtitle">[John]: Hi there!</p>),
+    ).toEqual(true);
   });
 
   it('should handle dispatches', () => {

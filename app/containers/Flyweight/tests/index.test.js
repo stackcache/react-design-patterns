@@ -7,7 +7,9 @@ describe('<Flyweight />', () => {
   it('expect flyweight to render', () => {
     const renderedComponent = shallow(<Flyweight />);
     expect(
-      renderedComponent.contains(<li>Serving tea to table# 1</li>),
+      renderedComponent.contains(
+        <p className="subtitle">Serving tea to table# 1</p>,
+      ),
     ).toEqual(true);
   });
 

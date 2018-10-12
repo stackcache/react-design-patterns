@@ -21,6 +21,7 @@ import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { Developer, Designer } from '../../components/Employee';
 import Organization from '../../components/Organization';
+import '../HomePage/HomePage.css';
 
 /* eslint-disable react/prefer-stateless-function */
 export class Composite extends React.PureComponent {
@@ -34,8 +35,9 @@ export class Composite extends React.PureComponent {
 
     return (
       <div>
-        <h1>Composite</h1>
-        <p>Net Salaries: ${org.getNetSalaries()}</p>
+        <div className="header">Composite</div>
+        <div className="instructions">Parts come together to make a whole</div>
+        <p className="subtitle">Net Salaries: ${org.getNetSalaries()}</p>
       </div>
     );
   }

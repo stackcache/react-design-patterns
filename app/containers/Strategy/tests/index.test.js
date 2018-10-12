@@ -8,7 +8,7 @@ describe('<Strategy />', () => {
     const renderedComponent = shallow(<Strategy />);
     expect(
       renderedComponent.contains(
-        <p>Large dataset: Sorting using bubble sort</p>,
+        <p className="subtitle">Large dataset: Sorting using bubble sort</p>,
       ),
     ).toEqual(true);
   });

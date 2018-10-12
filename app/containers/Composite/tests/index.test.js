@@ -6,9 +6,11 @@ import { Composite, mapDispatchToProps } from '../index';
 describe('<Composite />', () => {
   it('should render the component correctly', () => {
     const renderedComponent = shallow(<Composite />);
-    expect(renderedComponent.contains(<p>Net Salaries: $27000</p>)).toEqual(
-      true,
-    );
+    expect(
+      renderedComponent.contains(
+        <p className="subtitle">Net Salaries: $27000</p>,
+      ),
+    ).toEqual(true);
   });
 
   it('should handle dispatches', () => {
