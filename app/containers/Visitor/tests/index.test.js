@@ -7,7 +7,9 @@ describe('<Visitor />', () => {
   it('should render', () => {
     const renderedComponent = shallow(<Visitor />);
     expect(
-      renderedComponent.contains(<p>jumped 20 feet high into a tree!</p>),
+      renderedComponent.contains(
+        <p className="subtitle">jumped 20 feet high into a tree!</p>,
+      ),
     ).toEqual(true);
   });
 

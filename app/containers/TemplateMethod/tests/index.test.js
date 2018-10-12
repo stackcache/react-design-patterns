@@ -7,7 +7,9 @@ describe('<TemplateMethod />', () => {
   it('should render', () => {
     const renderedComponent = shallow(<TemplateMethod />);
     expect(
-      renderedComponent.contains(<p>Deploying android build to server</p>),
+      renderedComponent.contains(
+        <p className="subtitle">Deploying android build to server</p>,
+      ),
     ).toEqual(true);
   });
 

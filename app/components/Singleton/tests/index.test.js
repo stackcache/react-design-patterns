@@ -7,6 +7,8 @@ describe('<Singleton />', () => {
   it('should render', () => {
     const renderedComponent = shallow(<Singleton />);
 
-    expect(renderedComponent.contains(<p>Barack Obama</p>)).toEqual(true);
+    expect(
+      renderedComponent.contains(<p className="subtitle">Barack Obama</p>),
+    ).toEqual(true);
   });
 });

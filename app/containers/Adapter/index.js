@@ -28,6 +28,7 @@ import { compose } from 'redux';
 import WildDog from '../../components/WildDog';
 import Lion from '../../components/Lion';
 import Hunter from '../../components/Hunter';
+import '../HomePage/HomePage.css';
 
 // Adapter around wild dog to make it compatible with our game
 export class WildDogAdapter extends Lion {
@@ -49,8 +50,9 @@ export class Adapter extends React.PureComponent {
 
     return (
       <div>
-        <h1>Adapter</h1>
-        <p>
+        <div className="header">Adapter</div>
+        <div className="instructions">What can we hunt?</div>
+        <p className="subtitle">
           The hunter usually hunts lions, but adapts and is hunting a wild dog.
           The wild dog lets out a {animalSound}
         </p>

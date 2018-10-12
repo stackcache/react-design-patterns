@@ -24,6 +24,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import Bulb, { TurnOn, TurnOff, RemoteControl } from '../../components/Bulb';
+import '../HomePage/HomePage.css';
 
 /* eslint-disable react/prefer-stateless-function */
 export class Command extends React.PureComponent {
@@ -34,9 +35,10 @@ export class Command extends React.PureComponent {
     const remote = new RemoteControl();
     return (
       <div>
-        <h1>Command</h1>
-        <p>Turn on: {remote.submit(turnOn)}</p>
-        <p>Turn off: {remote.submit(turnOff)}</p>
+        <div className="header">Command</div>
+        <div className="instructions">Turn on the lights</div>
+        <p className="subtitle">Turn on: {remote.submit(turnOn)}</p>
+        <p className="subtitle">Turn off: {remote.submit(turnOff)}</p>
       </div>
     );
   }

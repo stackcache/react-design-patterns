@@ -8,7 +8,9 @@ describe('<Observer />', () => {
     const renderedComponent = shallow(<Observer />);
     expect(
       renderedComponent.contains(
-        <p>Hi, John Doe! New job posted: Software Engineer</p>,
+        <p className="subtitle">
+          Hi, John Doe! New job posted: Software Engineer
+        </p>,
       ),
     ).toEqual(true);
   });

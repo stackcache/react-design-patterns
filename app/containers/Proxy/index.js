@@ -23,6 +23,7 @@ import { connect } from 'react-redux';
 import { compose } from 'redux';
 import SecuredDoor from '../../components/SecuredDoor';
 import { LabDoor } from '../../components/Door';
+import '../HomePage/HomePage.css';
 
 /* eslint-disable react/prefer-stateless-function */
 export class Proxy extends React.PureComponent {
@@ -34,9 +35,10 @@ export class Proxy extends React.PureComponent {
 
     return (
       <div>
-        <h1>Proxy</h1>
-        <p>I am user1. Do I have access? {denied}</p>
-        <p>I am user2. Do I have access? {approved}</p>
+        <div className="header">Proxy</div>
+        <div className="instructions">What&#39;s the password?</div>
+        <p className="subtitle">I am user1. Do I have access? {denied}</p>
+        <p className="subtitle">I am user2. Do I have access? {approved}</p>
       </div>
     );
   }

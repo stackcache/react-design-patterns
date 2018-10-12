@@ -24,6 +24,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import ChatRoom, { User } from '../../components/ChatRoom';
+import '../HomePage/HomePage.css';
 
 /* eslint-disable react/prefer-stateless-function */
 export class Mediator extends React.PureComponent {
@@ -34,9 +35,10 @@ export class Mediator extends React.PureComponent {
 
     return (
       <div>
-        <h1>Mediator</h1>
-        <p>{john.send('Hi there!')}</p>
-        <p>{jay.send('Hey!')}</p>
+        <div className="header">Mediator</div>
+        <div className="instructions">Nothing wrong with a middleman</div>
+        <p className="subtitle">{john.send('Hi there!')}</p>
+        <p className="subtitle">{jay.send('Hey!')}</p>
       </div>
     );
   }

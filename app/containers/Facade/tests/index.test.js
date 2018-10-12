@@ -8,7 +8,9 @@ describe('<Facade />', () => {
     const renderedComponent = shallow(<Facade />);
     expect(
       renderedComponent.contains(
-        <p>Turn on: ouch! beep beep! loading... ready! </p>,
+        <p className="subtitle">
+          Turn on: ouch! beep beep! loading... ready!{' '}
+        </p>,
       ),
     ).toEqual(true);
   });

@@ -35,6 +35,7 @@ import {
   getMessages,
   resetMessages,
 } from '../../components/Accounts';
+import '../HomePage/HomePage.css';
 
 /* eslint-disable react/prefer-stateless-function */
 export class ChainOfResponsibility extends React.PureComponent {
@@ -51,10 +52,13 @@ export class ChainOfResponsibility extends React.PureComponent {
     bank.pay(259);
     return (
       <div>
-        <h1>Chain of Responsibility</h1>
-        <p>
-          {getMessages().map((msg, i) => <li key={i.toString()}>{msg}</li>)}
-        </p>
+        <div className="header">Chain of Responsibility</div>
+        <div className="instructions">Who has my back?</div>
+        {getMessages().map((msg, i) => (
+          <p className="subtitle" key={i.toString()}>
+            {msg}
+          </p>
+        ))}
       </div>
     );
   }

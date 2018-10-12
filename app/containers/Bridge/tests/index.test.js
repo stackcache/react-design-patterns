@@ -6,9 +6,11 @@ import { Bridge, mapDispatchToProps } from '../index';
 describe('<Bridge />', () => {
   it('should render the component correctly', () => {
     const renderedComponent = shallow(<Bridge />);
-    expect(renderedComponent.contains(<p>About page in Dark Black</p>)).toEqual(
-      true,
-    );
+    expect(
+      renderedComponent.contains(
+        <p className="subtitle">About page in Dark Black</p>,
+      ),
+    ).toEqual(true);
   });
 
   it('should handle dispatches', () => {

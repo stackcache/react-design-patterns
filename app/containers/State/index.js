@@ -25,6 +25,7 @@ import TextEditor, {
   UpperCase,
   LowerCase,
 } from '../../components/TextEditor';
+import '../HomePage/HomePage.css';
 
 /* eslint-disable react/prefer-stateless-function */
 export class State extends React.PureComponent {
@@ -40,10 +41,11 @@ export class State extends React.PureComponent {
 
     return (
       <div>
-        <h1>State</h1>
-        <p>Default: {first}</p>
-        <p>Upper: {second}</p>
-        <p>Lower: {third}</p>
+        <div className="header">State</div>
+        <div className="instructions">Im doing it live!</div>
+        <p className="subtitle">Default: {first}</p>
+        <p className="subtitle">Upper: {second}</p>
+        <p className="subtitle">Lower: {third}</p>
       </div>
     );
   }

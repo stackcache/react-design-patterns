@@ -8,7 +8,7 @@ describe('<Proxy />', () => {
     const renderedComponent = shallow(<Proxy />);
     expect(
       renderedComponent.contains(
-        <p>
+        <p className="subtitle">
           I am user1. Do I have access? You are not authorized to open this
           door.
         </p>,

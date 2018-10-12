@@ -24,6 +24,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import Radio, { RadioStation } from '../../components/Radio';
+import '../HomePage/HomePage.css';
 
 /* eslint-disable react/prefer-stateless-function */
 export class Iterator extends React.PureComponent {
@@ -44,11 +45,12 @@ export class Iterator extends React.PureComponent {
 
     return (
       <div>
-        <h1>Iterator</h1>
-        <h2>
+        <div className="header">Iterator</div>
+        <div className="instructions">Switch the station</div>
+        <div className="subtitle head">
           After removing station with frequency 89, the list of stations is...
-        </h2>
-        {messages.map(message => <p>{message}</p>)}
+        </div>
+        {messages.map(message => <p className="subtitle">{message}</p>)}
       </div>
     );
   }
