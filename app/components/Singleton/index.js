@@ -15,6 +15,7 @@
  */
 
 import React from 'react';
+import '../../containers/HomePage/HomePage.css';
 
 class Singleton extends React.PureComponent {
   constructor(props) {
@@ -44,9 +45,9 @@ class Singleton extends React.PureComponent {
     const prev = President2.get('44');
     return (
       <div>
-        <h1>Singleton</h1>
-        <h2>President</h2>
-        <p>{prev.name}</p>
+        <div className="header">Singleton</div>
+        <div className="subtitle head">President</div>
+        <p className="subtitle">{prev.name}</p>
       </div>
     );
   }

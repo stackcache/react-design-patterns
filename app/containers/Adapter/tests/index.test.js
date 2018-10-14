@@ -10,7 +10,7 @@ describe('<Adapter />', () => {
     const renderedComponent = shallow(<Adapter />);
     expect(
       renderedComponent.contains(
-        <p>
+        <p className="subtitle">
           The hunter usually hunts lions, but adapts and is hunting a wild dog.
           The wild dog lets out a wild dog bark!
         </p>,

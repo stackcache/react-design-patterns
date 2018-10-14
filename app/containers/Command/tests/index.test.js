@@ -7,7 +7,9 @@ describe('<Command />', () => {
   it('should render', () => {
     const renderedComponent = shallow(<Command />);
     expect(
-      renderedComponent.contains(<p>Turn on: Bulb has been lit</p>),
+      renderedComponent.contains(
+        <p className="subtitle">Turn on: Bulb has been lit</p>,
+      ),
     ).toEqual(true);
   });
 

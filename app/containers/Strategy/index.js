@@ -27,6 +27,7 @@ import {
   BubbleSortStrategy,
   QuickSortStrategy,
 } from '../../components/SortStrategy';
+import '../HomePage/HomePage.css';
 
 /* eslint-disable react/prefer-stateless-function */
 export class Strategy extends React.PureComponent {
@@ -40,9 +41,10 @@ export class Strategy extends React.PureComponent {
     const small = sorter.sort(dataset); // Output : Sorting using quick sort
     return (
       <div>
-        <h1>Strategy</h1>
-        <p>Large dataset: {large.message}</p>
-        <p>Small dataset: {small.message}</p>
+        <div className="header">Strategy</div>
+        <div className="instructions">Think on your feet</div>
+        <p className="subtitle">Large dataset: {large.message}</p>
+        <p className="subtitle">Small dataset: {small.message}</p>
       </div>
     );
   }

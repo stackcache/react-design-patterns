@@ -24,6 +24,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import Speak, { Monkey, Tiger, Dolphin, Jump } from '../../components/Animal';
+import '../HomePage/HomePage.css';
 
 /* eslint-disable react/prefer-stateless-function */
 export class Visitor extends React.PureComponent {
@@ -36,16 +37,17 @@ export class Visitor extends React.PureComponent {
 
     return (
       <div>
-        <h1>Visitor</h1>
-        <h2>Visited monkey</h2>
-        <p>{monkey.accept(speak)}</p>
-        <p>{monkey.accept(jump)}</p>
-        <h2>Visited tiger</h2>
-        <p>{tiger.accept(speak)}</p>
-        <p>{tiger.accept(jump)}</p>
-        <h2>Visited dolphin</h2>
-        <p>{dolphin.accept(speak)}</p>
-        <p>{dolphin.accept(jump)}</p>
+        <div className="header">Visitor</div>
+        <div className="instructions">What does the tiger say?</div>
+        <div className="subtitle head">Visited monkey</div>
+        <p className="subtitle">{monkey.accept(speak)}</p>
+        <p className="subtitle">{monkey.accept(jump)}</p>
+        <div className="subtitle head">Visited tiger</div>
+        <p className="subtitle">{tiger.accept(speak)}</p>
+        <p className="subtitle">{tiger.accept(jump)}</p>
+        <div className="subtitle head">Visited dolphin</div>
+        <p className="subtitle">{dolphin.accept(speak)}</p>
+        <p className="subtitle">{dolphin.accept(jump)}</p>
       </div>
     );
   }

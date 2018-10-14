@@ -5,7 +5,9 @@ import { Builder, Burger, BurgerBuilder, mapDispatchToProps } from '../index';
 describe('<Builder />', () => {
   it('should render', () => {
     const renderedComponent = shallow(<Builder />);
-    expect(renderedComponent.contains(<h2>Burger #14</h2>)).toEqual(true);
+    expect(
+      renderedComponent.contains(<div className="subtitle">Burger #14</div>),
+    ).toEqual(true);
   });
 
   it('should handle dispatches', () => {

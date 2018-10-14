@@ -1,0 +1,33 @@
+.header {
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  font-size: 80px;
+  font-family: 'Notable', 'Roboto', sans-serif;
+  color: #082d0f;
+}
+
+.pattern-grid .grid-card {
+  display: flex;
+  justify-content: center;
+}
+
+.instructions {
+  text-align: center;
+  font-family: 'Open Sans Condensed', 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.subtitle {
+  color: #082d0f;
+  margin: 40px 0;
+  text-align: center;
+  font-family: 'Open Sans Condensed', 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.subtitle.head {
+  font-weight: 600;
+}

@@ -29,6 +29,7 @@ import { compose } from 'redux';
 import Welder from '../../components/Welder';
 import Carpenter from '../../components/Carpenter';
 import { IronDoor, WoodenDoor } from '../../components/Door';
+import '../HomePage/HomePage.css';
 
 /**
  * Now we have our abstract factory that would
@@ -76,12 +77,13 @@ export class AbstractFactory extends React.PureComponent {
 
     return (
       <div>
-        <h1>Abstract Factory</h1>
-        <p>Door: {woodDoor}</p>
-        <p>Expert: {woodExpert}</p>
+        <div className="header">Abstract Factory</div>
+        <div className="instructions">Making doors</div>
+        <p className="subtitle">Door: {woodDoor}</p>
+        <p className="subtitle">Expert: {woodExpert}</p>
         <br />
-        <p>Door: {ironDoor}</p>
-        <p>Expert: {ironExpert}</p>
+        <p className="subtitle">Door: {ironDoor}</p>
+        <p className="subtitle">Expert: {ironExpert}</p>
       </div>
     );
   }

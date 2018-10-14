@@ -7,9 +7,17 @@ import Sheep from '../../../components/Sheep';
 describe('<Prototype />', () => {
   it('should render the component correctly', () => {
     const renderedComponent = shallow(<Prototype />);
-    expect(renderedComponent.contains(<p>Stack, Field Sheep</p>)).toEqual(true);
+    expect(
+      renderedComponent.contains(
+        <p className="subtitle">Stack, Field Sheep</p>,
+      ),
+    ).toEqual(true);
 
-    expect(renderedComponent.contains(<p>Cache, Field Sheep</p>)).toEqual(true);
+    expect(
+      renderedComponent.contains(
+        <p className="subtitle">Cache, Field Sheep</p>,
+      ),
+    ).toEqual(true);
   });
 
   it('should handle dispatches', () => {

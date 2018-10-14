@@ -18,6 +18,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
+import '../HomePage/HomePage.css';
 
 /* This is a Simple Being Factory */
 class Being {
@@ -38,9 +39,14 @@ export class SimpleFactory extends React.PureComponent {
 
     return (
       <div>
-        <h1>Simple Factory</h1>
-        {!being1.canDoAnything && <p>Man cannot do anything</p>}
-        {being2.canDoAnything && <p>God can do anything</p>}
+        <div className="header">Simple Factory</div>
+        <div className="instructions">Men vs. God</div>
+        <div className="subtitle">
+          {!being1.canDoAnything && <p>Man cannot do anything</p>}
+        </div>
+        <div className="subtitle">
+          {being2.canDoAnything && <p>God can do anything</p>}
+        </div>
       </div>
     );
   }

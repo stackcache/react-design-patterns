@@ -24,6 +24,7 @@ import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { DarkTheme, LightTheme } from '../../components/Theme';
 import { About, Careers } from '../../components/WebPage';
+import '../HomePage/HomePage.css';
 
 /* eslint-disable react/prefer-stateless-function */
 export class Bridge extends React.PureComponent {
@@ -34,9 +35,10 @@ export class Bridge extends React.PureComponent {
     const careers = new Careers(lightTheme);
     return (
       <div>
-        <h1>Bridge</h1>
-        <p>{about.getContent()}</p>
-        <p>{careers.getContent()}</p>
+        <div className="header">Bridge</div>
+        <div className="instructions">Site themes</div>
+        <p className="subtitle">{about.getContent()}</p>
+        <p className="subtitle">{careers.getContent()}</p>
       </div>
     );
   }

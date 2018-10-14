@@ -26,6 +26,7 @@ import {
   WhipCoffee,
   VanillaCoffee,
 } from '../../components/Coffee';
+import '../HomePage/HomePage.css';
 
 /* eslint-disable react/prefer-stateless-function */
 export class Decorator extends React.PureComponent {
@@ -37,8 +38,9 @@ export class Decorator extends React.PureComponent {
 
     return (
       <div>
-        <h1>Decorator</h1>
-        <p>
+        <div className="header">Decorator</div>
+        <div className="instructions">HOW much for a cup of coffee?!</div>
+        <p className="subtitle">
           {someCoffee.getDescription()}: ${someCoffee.getCost()}
         </p>
       </div>

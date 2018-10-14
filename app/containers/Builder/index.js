@@ -24,6 +24,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
+import '../HomePage/HomePage.css';
 
 export class Burger {
   constructor(builder) {
@@ -88,12 +89,13 @@ export class Builder extends React.PureComponent {
 
     return (
       <div>
-        <h1>Builder</h1>
-        <h2>Burger #{burger.size}</h2>
-        {!burger.cheese && <p>no cheese</p>}
-        {burger.pepperoni && <p>add pepperoni</p>}
-        {burger.lettuce && <p>add lettuce</p>}
-        {burger.tomato && <p>add tomato</p>}
+        <div className="header">Builder</div>
+        <div className="instructions">Build a burger</div>
+        <div className="subtitle">Burger #{burger.size}</div>
+        {!burger.cheese && <p className="subtitle">no cheese</p>}
+        {burger.pepperoni && <p className="subtitle">add pepperoni</p>}
+        {burger.lettuce && <p className="subtitle">add lettuce</p>}
+        {burger.tomato && <p className="subtitle">add tomato</p>}
       </div>
     );
   }

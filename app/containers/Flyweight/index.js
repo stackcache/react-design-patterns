@@ -22,6 +22,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import TeaShop, { TeaMaker } from '../../components/TeaShop';
+import '../HomePage/HomePage.css';
 
 /* eslint-disable react/prefer-stateless-function */
 export class Flyweight extends React.PureComponent {
@@ -32,12 +33,15 @@ export class Flyweight extends React.PureComponent {
     shop.takeOrder('more milk', 2);
     shop.takeOrder('less sugar', 4);
     shop.takeOrder('without sugar', 5);
-    const orders = shop.serve().map(order => <li>{order}</li>);
+    const orders = shop
+      .serve()
+      .map(order => <p className="subtitle">{order}</p>);
 
     return (
       <div>
-        <h1>Flyweight</h1>
-        <p>{orders}</p>
+        <div className="header">Flyweight</div>
+        <div className="instructions">Make enough for everyone</div>
+        {orders}
       </div>
     );
   }

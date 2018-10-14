@@ -1,14 +1,14 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import { State, mapDispatchToProps } from '../index';
+import { TemplateMethod, mapDispatchToProps } from '../index';
 
-describe('<State />', () => {
+describe('<TemplateMethod />', () => {
   it('should render', () => {
-    const renderedComponent = shallow(<State />);
+    const renderedComponent = shallow(<TemplateMethod />);
     expect(
       renderedComponent.contains(
-        <p className="subtitle">Upper: SECOND LINE</p>,
+        <p className="subtitle">Deploying android build to server</p>,
       ),
     ).toEqual(true);
   });

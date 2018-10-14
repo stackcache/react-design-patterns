@@ -18,6 +18,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import Sheep from '../../components/Sheep';
+import '../HomePage/HomePage.css';
 
 /* eslint-disable react/prefer-stateless-function */
 export class Prototype extends React.PureComponent {
@@ -28,13 +29,13 @@ export class Prototype extends React.PureComponent {
 
     return (
       <div>
-        <h1>Prototype</h1>
-        <h2>Original </h2>
-        <p>
+        <div className="header">Prototype</div>
+        <div className="subtitle head">Original</div>
+        <p className="subtitle">
           {orig.name}, {orig.category}
         </p>
-        <h2>Clone</h2>
-        <p>
+        <div className="subtitle head">Clone</div>
+        <p className="subtitle">
           {clone.name}, {clone.category}
         </p>
       </div>
