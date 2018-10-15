@@ -14,13 +14,17 @@ describe('<FactoryMethod />', () => {
 
     expect(
       renderedComponent.contains(
-        <p>Dev manager will be asking about design patterns</p>,
+        <p className="subtitle">
+          Dev manager will be asking about design patterns
+        </p>,
       ),
     ).toEqual(true);
 
     expect(
       renderedComponent.contains(
-        <p>Marketing manager will be asking about social media</p>,
+        <p className="subtitle">
+          Marketing manager will be asking about social media
+        </p>,
       ),
     ).toEqual(true);
   });

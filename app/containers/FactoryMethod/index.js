@@ -11,12 +11,14 @@
  *
  * In plain words
  *
- * It provides a way to delegate the instantiation logic to child classes.
+ * Factory method provides a way to delegate the instantiation
+ * logic to child classes.
  */
 
 import React from 'react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
+import '../HomePage/HomePage.css';
 
 export class Interviewer {
   constructor() {
@@ -75,9 +77,10 @@ export class FactoryMethod extends React.PureComponent {
 
     return (
       <div>
-        <h1>Factory Method</h1>
-        <p>Dev manager will be {devQs}</p>
-        <p>Marketing manager will be {markQs}</p>
+        <div className="header">Factory Method</div>
+        <div className="instructions">Setting up a job interview</div>
+        <p className="subtitle">Dev manager will be {devQs}</p>
+        <p className="subtitle">Marketing manager will be {markQs}</p>
       </div>
     );
   }

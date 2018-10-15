@@ -8,7 +8,7 @@ describe('<Memento />', () => {
     const renderedComponent = shallow(<Memento />);
     expect(
       renderedComponent.contains(
-        <p>
+        <p className="subtitle">
           Restored Text: This is the first sentence. This is second. And this is
           third.
         </p>,

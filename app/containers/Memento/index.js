@@ -2,12 +2,26 @@
  *
  * Memento
  *
+ * Real World Example
+ *
+ * Take the example of calculator (i.e. originator), where whenever
+ * you perform some calculation the last calculation is saved in
+ * memory (i.e. memento) so that you can get back to it and maybe
+ * get it restored using some action buttons (i.e. caretaker).
+ *
+ * In plain words
+ *
+ * Memento pattern is about capturing and storing the current state
+ * of an object in a manner that it can be restored later on in a
+ * smooth manner.
+ *
  */
 
 import React from 'react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import Editor from '../../components/Editor';
+import '../HomePage/HomePage.css';
 
 /* eslint-disable react/prefer-stateless-function */
 export class Memento extends React.PureComponent {
@@ -33,9 +47,10 @@ export class Memento extends React.PureComponent {
     const restoredText = editor.getContent(); // This is the first sentence. This is second.
     return (
       <div>
-        <h1>Memento</h1>
-        <p>Original Text: {preSaveText}</p>
-        <p>Restored Text: {restoredText}</p>
+        <div className="header">Memento</div>
+        <div className="instructions">Save early...Save often</div>
+        <p className="subtitle">Original Text: {preSaveText}</p>
+        <p className="subtitle">Restored Text: {restoredText}</p>
       </div>
     );
   }

@@ -19,6 +19,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import JobPost, { JobSeeker, EmploymentAgency } from '../../components/JobPost';
+import '../HomePage/HomePage.css';
 
 /* eslint-disable react/prefer-stateless-function */
 export class Observer extends React.PureComponent {
@@ -36,8 +37,13 @@ export class Observer extends React.PureComponent {
     const results = jobPostings.addJob(new JobPost('Software Engineer'));
     return (
       <div>
-        <h1>Observer</h1>
-        {results.map((result, i) => <p key={i.toString()}>{result}</p>)}
+        <div className="header">Observer</div>
+        <div className="instructions">Pubba sub sub!</div>
+        {results.map((result, i) => (
+          <p className="subtitle" key={i.toString()}>
+            {result}
+          </p>
+        ))}
       </div>
     );
   }
