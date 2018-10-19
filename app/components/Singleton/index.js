@@ -90,7 +90,10 @@ class Singleton extends React.PureComponent {
 
     return (
       <div>
-        <HomeBtn />
+        <HomeBtn
+          previous={{ name: 'Prototype', url: 'prototype' }}
+          next={{ name: 'Adapter', url: 'adapter' }}
+        />
         <div className="header">Singleton</div>
         <div className="instructions">There can only be one...</div>
         <p className="subtitle">

@@ -174,7 +174,10 @@ export class Builder extends React.PureComponent {
 
     return (
       <div>
-        <HomeBtn />
+        <HomeBtn
+          previous={{ name: 'Abstract Factory', url: 'abstract-factory' }}
+          next={{ name: 'Prototype', url: 'prototype' }}
+        />
         <div className="header">Builder</div>
         <div className="instructions">Build a burger</div>
         <div className="subtitle">

@@ -4,12 +4,9 @@
  *
  */
 
-import React from 'react';
-
 /* eslint-disable react/prefer-stateless-function */
-class TeaShop extends React.PureComponent {
+class TeaShop {
   constructor(teaMaker) {
-    super();
     this.teaMaker = teaMaker;
     this.orders = [];
 

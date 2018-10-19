@@ -29,6 +29,8 @@ import WildDog from '../../components/WildDog';
 import Lion from '../../components/Lion';
 import Hunter from '../../components/Hunter';
 import '../HomePage/HomePage.css';
+import DpHighlighter from '../../components/DpHighlighter';
+import HomeBtn from '../../components/HomeBtn';
 
 // Adapter around wild dog to make it compatible with our game
 export class WildDogAdapter extends Lion {
@@ -41,6 +43,69 @@ export class WildDogAdapter extends Lion {
 
 /* eslint-disable react/prefer-stateless-function */
 export class Adapter extends React.PureComponent {
+  constructor() {
+    super();
+    this.getLionCode = this.getLionCode.bind(this);
+    this.getAdapterCode = this.getAdapterCode.bind(this);
+  }
+
+  getLionCode() {
+    return `
+    class Lion {
+      constructor() {
+        this.roar = () => {};
+      }
+    }
+
+    export class AsianLion extends Lion {
+      constructor() {
+        super();
+        this.roar = () => 'asian lion roar!';
+      }
+    }
+
+    export class AfricanLion extends Lion {
+      constructor() {
+        super();
+        this.roar = () => 'african lion roar!';
+      }
+    }
+    `;
+  }
+
+  getAdapterCode() {
+    return `
+    class WildDog {
+      constructor() {
+        this.bark = () => 'wild dog bark!';
+      }
+    }
+
+    class WildDogAdapter extends Lion {
+      constructor(dog) {
+        super();
+        this.dog = dog;
+        this.roar = dog.bark;
+      }
+    }
+    `;
+  }
+
+  getHuntCode() {
+    return `
+    const wildDog = new WildDog();
+    const wildDogAdapter = new WildDogAdapter(wildDog);
+
+    const hunter = new Hunter();
+    const animalSound = hunter.hunt(wildDogAdapter);
+
+    <p>
+      The hunter usually hunts lions, but adapts and is hunting a wild dog.
+      The wild dog lets out a {animalSound}
+    </p>
+    `;
+  }
+
   render() {
     const wildDog = new WildDog();
     const wildDogAdapter = new WildDogAdapter(wildDog);
@@ -50,8 +115,26 @@ export class Adapter extends React.PureComponent {
 
     return (
       <div>
+        <HomeBtn
+          previous={{ name: 'Singleton', url: 'singleton' }}
+          next={{ name: 'Bridge', url: 'bridge' }}
+        />
         <div className="header">Adapter</div>
         <div className="instructions">What can we hunt?</div>
+        <p className="subtitle">
+          You have used a wall adapter to charge one of your many devices right?
+          Good, you know how this works then. Lets create an adapter. Lets say
+          we have a hunter that ONLY hunts lions (for whatever reason).
+        </p>
+        <DpHighlighter code={this.getLionCode()} />
+        <p className="subtitle">
+          We need to create an adapter, so he can also hunt wild dogs.
+        </p>
+        <DpHighlighter code={this.getAdapterCode()} />
+        <p className="subtitle">
+          Now the hunter should be able to hunt dogs without issue.
+        </p>
+        <DpHighlighter code={this.getHuntCode()} />
         <p className="subtitle">
           The hunter usually hunts lions, but adapts and is hunting a wild dog.
           The wild dog lets out a {animalSound}

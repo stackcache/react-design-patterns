@@ -64,7 +64,10 @@ export class Prototype extends React.PureComponent {
 
     return (
       <div>
-        <HomeBtn />
+        <HomeBtn
+          previous={{ name: 'Builder', url: 'builder' }}
+          next={{ name: 'Singleton', url: 'singleton' }}
+        />
         <div className="header">Prototype</div>
         <div className="subtitle">
           Prototypes are all about creating objects based on existing objects.

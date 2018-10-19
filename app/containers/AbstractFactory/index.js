@@ -159,7 +159,10 @@ export class AbstractFactory extends React.PureComponent {
 
     return (
       <div>
-        <HomeBtn />
+        <HomeBtn
+          previous={{ name: 'Factory Method', url: 'factory-method' }}
+          next={{ name: 'Builder', url: 'builder' }}
+        />
         <div className="header">Abstract Factory</div>
         <div className="instructions">Making doors</div>
         <p className="subtitle">

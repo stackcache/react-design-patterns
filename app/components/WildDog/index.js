@@ -4,12 +4,9 @@
  *
  */
 
-import React from 'react';
-
 /* eslint-disable react/prefer-stateless-function */
-class WildDog extends React.PureComponent {
+class WildDog {
   constructor() {
-    super();
     this.bark = () => 'wild dog bark!';
   }
 }

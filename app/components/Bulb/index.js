@@ -4,12 +4,9 @@
  *
  */
 
-import React from 'react';
-
 /* eslint-disable react/prefer-stateless-function */
-class Bulb extends React.PureComponent {
+class Bulb {
   constructor() {
-    super();
     this.turnOn = () => 'Bulb has been lit';
     this.turnOff = () => 'Darkness!';
   }

@@ -75,7 +75,7 @@ export class SimpleFactory extends React.PureComponent {
 
     return (
       <div>
-        <HomeBtn />
+        <HomeBtn next={{ name: 'Factory Method', url: 'factory-method' }} />
         <div className="header">Simple Factory</div>
         <div className="instructions">Men vs. Gods</div>
         <div className="subtitle">
