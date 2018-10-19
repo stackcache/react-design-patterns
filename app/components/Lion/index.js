@@ -4,12 +4,9 @@
  *
  */
 
-import React from 'react';
-
 /* eslint-disable react/prefer-stateless-function */
-class Lion extends React.PureComponent {
+class Lion {
   constructor() {
-    super();
     this.roar = () => {};
   }
 }

@@ -4,12 +4,9 @@
  *
  */
 
-import React from 'react';
-
 /* eslint-disable react/prefer-stateless-function */
-class Organization extends React.PureComponent {
+class Organization {
   constructor() {
-    super();
     this.employees = [];
     this.addEmployee = this.addEmployee.bind(this);
     this.getNetSalaries = this.getNetSalaries.bind(this);

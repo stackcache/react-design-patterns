@@ -10,6 +10,7 @@
 .pattern-grid .grid-card {
   display: flex;
   justify-content: center;
+  margin: 20px 0;
 }
 
 .instructions {

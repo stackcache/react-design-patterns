@@ -4,12 +4,9 @@
  *
  */
 
-import React from 'react';
-
 /* eslint-disable react/prefer-stateless-function */
-class DoorFittingExpert extends React.PureComponent {
+class DoorFittingExpert {
   constructor() {
-    super();
     this.getDescription = () => {};
   }
 }

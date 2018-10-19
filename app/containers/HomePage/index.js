@@ -322,7 +322,7 @@ class HomePage extends React.PureComponent {
           the magic!
         </div>
         <div className="subtitle">Creational</div>
-        <Grid className="pattern-grid" container spacing={24}>
+        <Grid className="pattern-grid" container>
           {this.renderDPCard(simpleFactory)}
           {this.renderDPCard(factoryMethod)}
           {this.renderDPCard(abstractFactory)}
@@ -332,7 +332,7 @@ class HomePage extends React.PureComponent {
         </Grid>
 
         <div className="subtitle">Structural</div>
-        <Grid className="pattern-grid" container spacing={24}>
+        <Grid className="pattern-grid" container>
           {this.renderDPCard(adapter)}
           {this.renderDPCard(bridge)}
           {this.renderDPCard(composite)}
@@ -344,7 +344,7 @@ class HomePage extends React.PureComponent {
         </Grid>
 
         <div className="subtitle">Behavioral</div>
-        <Grid className="pattern-grid" container spacing={24}>
+        <Grid className="pattern-grid" container>
           {this.renderDPCard(command)}
           {this.renderDPCard(iterator)}
           {this.renderDPCard(mediator)}

@@ -4,12 +4,9 @@
  *
  */
 
-import React from 'react';
-
 /* eslint-disable react/prefer-stateless-function */
-class Theme extends React.PureComponent {
+class Theme {
   constructor() {
-    super();
     this.getColor = () => {};
   }
 }
