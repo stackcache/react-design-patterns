@@ -27,7 +27,7 @@ Build the DLL to speed up webpack builds
 Start the app
 `npm start`
 
-View the app in your local browser by navigating to [http://localhost:3000]
+View the app in your local browser by navigating to <a href="http://localhost:3000">localhost:3000</a>
 
 ## Structure
 
