@@ -1,14 +1,8 @@
-# Contributing to react-boilerplate
-
-Love react-boilerplate and want to help? Thanks so much, there's something to do for everybody!
-
-Please take a moment to review this document in order to make the contribution process easy and effective for everyone involved.
-
-Following these guidelines helps to communicate that you respect the time of the developers managing and developing this open source project. In return, they should reciprocate that respect in addressing your issue or assessing patches and features.
+# Contributing to react-design-patterns
 
 ## Using the issue tracker
 
-The [issue tracker](https://github.com/react-boilerplate/react-boilerplate/issues) is
+The [issue tracker](https://github.com/stackcache/react-design-patterns/issues) is
 the preferred channel for [bug reports](#bugs), [features requests](#features)
 and [submitting pull requests](#pull-requests).
 
@@ -71,7 +65,7 @@ Please adhere to the coding conventions used throughout a project (indentation,
 accurate comments, etc.) and any other requirements (such as test coverage).
 
 Since the `master` branch is what people actually use in production, we have a
-`dev` branch that unstable changes get merged into first. Only when we
+`develop` branch that unstable changes get merged into first. Only when we
 consider that stable we merge it into the `master` branch and release the
 changes for real.
 
@@ -82,11 +76,11 @@ included in the project:
 
     ```bash
     # Clone your fork of the repo into the current directory
-    git clone https://github.com/<your-username>/react-boilerplate.git
+    git clone https://github.com/<your-username>/react-design-patterns.git
     # Navigate to the newly cloned directory
-    cd react-boilerplate
+    cd react-design-patterns
     # Assign the original repo to a remote called "upstream"
-    git remote add upstream https://github.com/react-boilerplate/react-boilerplate.git
+    git remote add upstream https://github.com/stackcache/react-design-patterns.git
     ```
 
 2.  If you cloned a while ago, get the latest changes from upstream:
@@ -120,7 +114,7 @@ included in the project:
     with a clear title and description.
 
 **IMPORTANT**: By submitting a patch, you agree to allow the project
-owners to license your work under the terms of the [MIT License](https://github.com/react-boilerplate/react-boilerplate/blob/master/LICENSE.md).
+owners to license your work under the terms of the [MIT License](https://github.com/react-design-patterns/react-design-patterns/blob/master/LICENSE.md).
 
 # Collaborating guidelines
 
