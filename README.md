@@ -7,11 +7,13 @@
 
 <br />
 
-# Prerequisites
+# Quick start
+
+## Prerequisites
 
 Please install Node before proceeding if you have not done so already. Instructions can be found <a href="https://nodejs.org">here</a>
 
-# Quick start
+## Usage
 
 Clone the repo
 `git clone https://github.com/stackcache/react-design-patterns.git`
@@ -27,7 +29,7 @@ Start the app
 
 View the app in your local browser by navigating to http://localhost:3000
 
-# Structure
+## Structure
 
 The patterns are located in the containers directory. The components directory is composed of classes utilized by the design pattern containers.
 
