@@ -4,12 +4,9 @@
  *
  */
 
-import React from 'react';
-
 /* eslint-disable react/prefer-stateless-function */
-class Coffee extends React.PureComponent {
+class Coffee {
   constructor() {
-    super();
     this.getCost = () => {};
     this.getDescription = () => {};
   }

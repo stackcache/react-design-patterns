@@ -4,8 +4,6 @@
  *
  */
 
-import React from 'react';
-
 const messages = [];
 
 function addMessage(message) {
@@ -21,9 +19,8 @@ export function resetMessages() {
 }
 
 /* eslint-disable react/prefer-stateless-function */
-class Accounts extends React.PureComponent {
+class Accounts {
   constructor() {
-    super();
     this.successor = null;
     this.balance = null;
     this.accountName = null;

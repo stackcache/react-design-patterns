@@ -4,12 +4,9 @@
  *
  */
 
-import React from 'react';
-
 /* eslint-disable react/prefer-stateless-function */
-class Sheep extends React.PureComponent {
+class Sheep {
   constructor(name, category) {
-    super();
     this.name = name;
     this.category = category || 'Mountain Sheep';
   }

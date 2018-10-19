@@ -7,7 +7,7 @@ describe('<SimpleFactory />', () => {
   it('should render the page message', () => {
     const renderedComponent = shallow(<SimpleFactory />);
 
-    expect(renderedComponent.contains(<p>God can do anything</p>)).toEqual(
+    expect(renderedComponent.contains(<p>Gods can do anything</p>)).toEqual(
       true,
     );
 

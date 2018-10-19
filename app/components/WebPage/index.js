@@ -4,12 +4,9 @@
  *
  */
 
-import React from 'react';
-
 /* eslint-disable react/prefer-stateless-function */
-class WebPage extends React.PureComponent {
+class WebPage {
   constructor() {
-    super();
     this.getContent = () => {};
   }
 }

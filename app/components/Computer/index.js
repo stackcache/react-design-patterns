@@ -4,12 +4,9 @@
  *
  */
 
-import React from 'react';
-
 /* eslint-disable react/prefer-stateless-function */
-class Computer extends React.PureComponent {
+class Computer {
   constructor() {
-    super();
     this.getElectricShock = () => 'ouch! ';
     this.makeSound = () => 'beep beep! ';
     this.showLoadingScreen = () => 'loading... ';

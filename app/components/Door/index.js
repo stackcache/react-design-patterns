@@ -4,12 +4,9 @@
  *
  */
 
-import React from 'react';
-
 /* eslint-disable react/prefer-stateless-function */
-class Door extends React.PureComponent {
+class Door {
   constructor() {
-    super();
     this.getDescription = () => {};
     this.open = () => {};
     this.close = () => {};
