@@ -1,5 +1,6 @@
-<img src="app/images/github-banner.png" alt="react design patterns banner" align="center" />
+<img src="app/images/app-ui.png" alt="react design patterns banner" align="center" />
 
+<br />
 <br />
 
 <div align="center"><strong>React Design Patterns</strong></div>
